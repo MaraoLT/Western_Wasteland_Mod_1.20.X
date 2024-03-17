@@ -3,12 +3,10 @@ package net.gbm.western_wasteland.block;
 import net.gbm.western_wasteland.Western_Wasteland;
 import net.gbm.western_wasteland.item.ModItems;
 import net.minecraft.client.resources.sounds.Sound;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.GlassBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,7 +24,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.ANVIL)));
 
     public static final RegistryObject<Block> ROSE_GOLD_ORE = registerBlock("rose_gold_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.STONE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(3.5f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
     // Tempered Glass is explosion resistent
     public static final RegistryObject<Block> TEMPERED_GLASS = registerBlock("tempered_glass",

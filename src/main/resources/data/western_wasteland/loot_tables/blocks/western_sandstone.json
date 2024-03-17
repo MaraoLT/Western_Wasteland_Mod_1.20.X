@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "western_wasteland:rose_gold_block"
+          "name": "western_wasteland:western_sandstone"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "western_wasteland:blocks/rose_gold_block"
+  "random_sequence": "western_wasteland:blocks/western_sandstone"
 }
