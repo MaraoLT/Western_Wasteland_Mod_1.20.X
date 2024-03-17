@@ -1,8 +1,11 @@
 package net.gbm.western_wasteland;
 
 import com.mojang.logging.LogUtils;
+import net.gbm.western_wasteland.block.ModBlocks;
 import net.gbm.western_wasteland.item.ModCreativeModTabs;
 import net.gbm.western_wasteland.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +31,7 @@ public class Western_Wasteland {
         ModCreativeModTabs.register(modEventBus); // cria a nova aba do criativo
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -57,7 +61,7 @@ public class Western_Wasteland {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.TEMPERED_GLASS.get(), RenderType.translucent());
         }
     }
 }

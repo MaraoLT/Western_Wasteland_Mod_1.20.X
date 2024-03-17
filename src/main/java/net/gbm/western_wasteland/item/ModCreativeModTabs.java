@@ -1,6 +1,7 @@
 package net.gbm.western_wasteland.item;
 
 import net.gbm.western_wasteland.Western_Wasteland;
+import net.gbm.western_wasteland.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -26,6 +27,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BULLET.get());
                         output.accept(ModItems.CACTUS_FLOWER.get());
                         // output.accept(Items.DIAMOND); // itens padrao tbm podem ser add e sem o .get()
+                        output.accept(ModBlocks.ROSE_GOLD_BLOCK.get());
+                        output.accept(ModBlocks.TEMPERED_GLASS.get());
                     })
                     .build());
 

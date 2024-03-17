@@ -6,5 +6,8 @@
   "item.western_wasteland.bullet": "Bullet",
   "item.western_wasteland.cactus_flower": "Cactus Flower",
 
+  "block.western_wasteland.rose_gold_block": "Block of Rose Gold",
+  "block.western_wasteland.tempered_glass": "Tempered Glass",
+
   "creativetab.western_wasteland_tab": "Western Wasteland Tab"
 }
