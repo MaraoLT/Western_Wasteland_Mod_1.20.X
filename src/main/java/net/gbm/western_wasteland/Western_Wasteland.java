@@ -61,7 +61,7 @@ public class Western_Wasteland {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.TEMPERED_GLASS.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.TEMPERED_GLASS.get(), RenderType.translucent()); // ver se precisa msm
         }
     }
 }

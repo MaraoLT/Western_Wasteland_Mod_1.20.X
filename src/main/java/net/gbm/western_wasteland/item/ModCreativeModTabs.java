@@ -28,7 +28,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CACTUS_FLOWER.get());
                         // output.accept(Items.DIAMOND); // itens padrao tbm podem ser add e sem o .get()
                         output.accept(ModBlocks.ROSE_GOLD_BLOCK.get());
+                        output.accept(ModBlocks.ROSE_GOLD_ORE.get());
                         output.accept(ModBlocks.TEMPERED_GLASS.get());
+                        output.accept(ModBlocks.WESTERN_SANDSTONE.get());
+                        output.accept(ModBlocks.WESTERN_SAND.get());
                     })
                     .build());
 

@@ -2,6 +2,7 @@ package net.gbm.western_wasteland.block;
 
 import net.gbm.western_wasteland.Western_Wasteland;
 import net.gbm.western_wasteland.item.ModItems;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -24,8 +25,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROSE_GOLD_BLOCK = registerBlock("rose_gold_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.ANVIL)));
 
+    public static final RegistryObject<Block> ROSE_GOLD_ORE = registerBlock("rose_gold_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.STONE)));
+
+    // Tempered Glass is explosion resistent
     public static final RegistryObject<Block> TEMPERED_GLASS = registerBlock("tempered_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).explosionResistance(1200.0F)));
+
+    // precisa add gravidade pra areia
+    public static final RegistryObject<Block> WESTERN_SAND = registerBlock("western_sand",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
+
+    public static final RegistryObject<Block> WESTERN_SANDSTONE = registerBlock("western_sandstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
