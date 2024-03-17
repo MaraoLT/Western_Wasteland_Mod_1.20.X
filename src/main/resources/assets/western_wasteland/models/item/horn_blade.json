@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "western_wasteland:item/horn_blade"
+  }
+}
