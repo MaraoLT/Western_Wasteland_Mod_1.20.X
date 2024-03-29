@@ -6,6 +6,7 @@ import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockCollisions;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -40,6 +41,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WESTERN_CUT_SANDSTONE = registerBlock("western_cut_sandstone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_SANDSTONE)));
+
+    public static final RegistryObject<Block> WESTERN_CACTUS = registerBlock("western_cactus",
+            () -> new CactusBlock(BlockBehaviour.Properties.copy(Blocks.CACTUS)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

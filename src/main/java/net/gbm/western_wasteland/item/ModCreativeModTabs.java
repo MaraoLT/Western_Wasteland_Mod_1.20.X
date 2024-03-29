@@ -34,6 +34,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.WESTERN_SANDSTONE.get());
                         output.accept(ModBlocks.WESTERN_CUT_SANDSTONE.get());
                         output.accept(ModBlocks.WESTERN_SAND.get());
+                        output.accept(ModBlocks.WESTERN_CACTUS.get());
                     })
                     .build());
 
