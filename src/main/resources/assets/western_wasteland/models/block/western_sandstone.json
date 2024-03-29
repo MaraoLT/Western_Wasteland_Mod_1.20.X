@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "down": "western_wasteland:block/western_sandstone_up",
+    "down": "western_wasteland:block/western_sandstone_down",
     "up": "western_wasteland:block/western_sandstone_up",
     "north": "western_wasteland:block/western_sandstone_sides",
     "east": "western_wasteland:block/western_sandstone_sides",

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "western_wasteland:block/western_cut_sandstone_down",
+    "up": "western_wasteland:block/western_cut_sandstone_up",
+    "north": "western_wasteland:block/western_cut_sandstone_sides",
+    "east": "western_wasteland:block/western_cut_sandstone_sides",
+    "south": "western_wasteland:block/western_cut_sandstone_sides",
+    "west": "western_wasteland:block/western_cut_sandstone_sides",
+    "particle": "western_wasteland:block/western_cut_sandstone_sides"
+  }
+}

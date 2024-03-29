@@ -5,12 +5,14 @@
   "item.western_wasteland.rose_gold_ingot": "Rose Gold Ingot",
   "item.western_wasteland.bullet": "Bullet",
   "item.western_wasteland.cactus_flower": "Cactus Flower",
+  "item.western_wasteland.harmonica": "Harmonica",
 
   "block.western_wasteland.rose_gold_block": "Block of Rose Gold",
   "block.western_wasteland.rose_gold_ore": "Rose Gold Ore",
   "block.western_wasteland.tempered_glass": "Tempered Glass",
   "block.western_wasteland.western_sand": "Western Sand",
   "block.western_wasteland.western_sandstone": "Western Sandstone",
+  "block.western_wasteland.western_cut_sandstone": "Western Cut Sandstone",
 
-  "creativetab.western_wasteland_tab": "Western Wasteland Tab"
+  "creativetab.western_wasteland_tab": "Western Wasteland"
 }

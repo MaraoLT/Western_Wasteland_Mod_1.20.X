@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "western_wasteland:western_cut_sandstone"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "western_wasteland:blocks/western_cut_sandstone"
+}

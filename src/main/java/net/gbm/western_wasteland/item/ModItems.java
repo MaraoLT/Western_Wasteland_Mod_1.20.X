@@ -1,6 +1,9 @@
 package net.gbm.western_wasteland.item;
 
 import net.gbm.western_wasteland.Western_Wasteland;
+import net.gbm.western_wasteland.item.custom.HarmonicaItem;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.InstrumentItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,6 +29,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CACTUS_FLOWER = ITEMS.register("cactus_flower",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HARMONICA = ITEMS.register("harmonica",
+            () -> new HarmonicaItem(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

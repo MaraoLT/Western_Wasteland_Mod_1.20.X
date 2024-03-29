@@ -38,6 +38,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> WESTERN_SANDSTONE = registerBlock("western_sandstone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
 
+    public static final RegistryObject<Block> WESTERN_CUT_SANDSTONE = registerBlock("western_cut_sandstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_SANDSTONE)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
