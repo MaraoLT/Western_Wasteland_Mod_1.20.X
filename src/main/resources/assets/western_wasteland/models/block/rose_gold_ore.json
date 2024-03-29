@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "western_wasteland:block/rose_gold_ore"
+    "down": "western_wasteland:block/western_sandstone_down",
+    "up": "western_wasteland:block/western_sandstone_up",
+    "north": "western_wasteland:block/rose_gold_ore",
+    "east": "western_wasteland:block/rose_gold_ore",
+    "south": "western_wasteland:block/rose_gold_ore",
+    "west": "western_wasteland:block/rose_gold_ore",
+    "particle": "western_wasteland:block/rose_gold_ore"
   }
 }
