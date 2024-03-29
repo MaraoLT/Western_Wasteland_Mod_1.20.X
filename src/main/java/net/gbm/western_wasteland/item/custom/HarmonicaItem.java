@@ -17,12 +17,12 @@ public class HarmonicaItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (!pLevel.isClientSide()) {
+        if (pLevel.isClientSide() && pUsedHand == InteractionHand.MAIN_HAND) {
             // toca som
-            pLevel.playSound(pPlayer, BlockPos.containing(pPlayer.position()), SoundEvents.NOTE_BLOCK_HARP.get(),
+            pLevel.playSound(pPlayer, BlockPos.containing(pPlayer.position()), SoundEvents.ANVIL_USE,
                     SoundSource.PLAYERS, 1f, 1f);
             // add cooldown
-            pPlayer.getCooldowns().addCooldown(this, 30);
+            pPlayer.getCooldowns().addCooldown(this, 10);
 
         }
         return super.use(pLevel, pPlayer, pUsedHand);
