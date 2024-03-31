@@ -19,7 +19,7 @@ public class HarmonicaItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         if (pLevel.isClientSide() && pUsedHand == InteractionHand.MAIN_HAND) {
             // toca som
-            pLevel.playSound(pPlayer, BlockPos.containing(pPlayer.position()), SoundEvents.ANVIL_USE,
+            pLevel.playSound(pPlayer, BlockPos.containing(pPlayer.position()), SoundEvents.GOAT_HORN_PLAY,
                     SoundSource.PLAYERS, 1f, 1f);
             // add cooldown
             pPlayer.getCooldowns().addCooldown(this, 10);

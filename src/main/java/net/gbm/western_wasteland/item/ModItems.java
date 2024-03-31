@@ -28,7 +28,7 @@ public class ModItems {
     public static final RegistryObject<Item> BULLET = ITEMS.register("bullet",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CACTUS_FLOWER = ITEMS.register("cactus_flower",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.CACTUS_FLOWER)));
     public static final RegistryObject<Item> HARMONICA = ITEMS.register("harmonica",
             () -> new HarmonicaItem(new Item.Properties()));
     public static void register(IEventBus eventBus) {

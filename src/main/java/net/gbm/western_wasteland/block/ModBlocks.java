@@ -32,9 +32,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TEMPERED_GLASS = registerBlock("tempered_glass",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).explosionResistance(1200.0F)));
 
-    // precisa add gravidade pra areia
+    // gravidade adicionada de forma amatongas
     public static final RegistryObject<Block> WESTERN_SAND = registerBlock("western_sand",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
+            () -> new GravelBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
 
     public static final RegistryObject<Block> WESTERN_SANDSTONE = registerBlock("western_sandstone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
