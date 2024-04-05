@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": {
+      "item": "western_wasteland:dead_horn"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  H",
+    " H ",
+    "S  "
+  ],
+  "result": {
+    "item": "western_wasteland:horn_blade"
+  },
+  "show_notification": true
+}

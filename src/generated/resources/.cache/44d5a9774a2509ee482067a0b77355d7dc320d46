@@ -1,0 +1,4 @@
+// 1.20.1	2024-03-31T12:52:54.8856008	Tags for minecraft:block mod id western_wasteland
+0c4c1fc5ea4f0924be13edbf5bf695f03bcc716e data/minecraft/tags/blocks/mineable/pickaxe.json
+0f26cea87f2de5196c688e8fdfd388edda7e3a72 data/minecraft/tags/blocks/mineable/shovel.json
+3b971e832f19de9c20eeb6117a3c1478b85d2af3 data/minecraft/tags/blocks/needs_iron_tool.json

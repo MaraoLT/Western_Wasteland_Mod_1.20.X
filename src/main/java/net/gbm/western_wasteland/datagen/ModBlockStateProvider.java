@@ -17,11 +17,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.ROSE_GOLD_BLOCK);
-        blockWithItem(ModBlocks.ROSE_GOLD_ORE);
+//        blockWithItem(ModBlocks.ROSE_GOLD_ORE);
         blockWithItem(ModBlocks.WESTERN_SAND);
-        blockWithItem(ModBlocks.WESTERN_SANDSTONE);
-        blockWithItem(ModBlocks.WESTERN_CUT_SANDSTONE);
+//        blockWithItem(ModBlocks.WESTERN_SANDSTONE);
+//        blockWithItem(ModBlocks.WESTERN_CUT_SANDSTONE);
         blockWithItem(ModBlocks.TEMPERED_GLASS);
+
+
     }
 
     // cria o bloco e o item do bloco direto

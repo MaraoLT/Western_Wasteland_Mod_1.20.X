@@ -1,0 +1,8 @@
+// 1.20.1	2024-03-31T12:52:54.8823982	Loot Tables
+279f0a9930cfce10ef5d0b0820e24afc7506f7c8 data/western_wasteland/loot_tables/blocks/rose_gold_block.json
+b3b6775689f8f640e85ca41f2abaebf7f7349507 data/western_wasteland/loot_tables/blocks/rose_gold_ore.json
+2bd260664a95954a1d13372706167fc830f23fed data/western_wasteland/loot_tables/blocks/tempered_glass.json
+20f47c50037995e9dcbb0300591e8f4443182514 data/western_wasteland/loot_tables/blocks/western_cactus.json
+11d7848357d435e74fcb424508b0f9daa7a68f87 data/western_wasteland/loot_tables/blocks/western_cut_sandstone.json
+abbb1dbc0efedc4c5a1fd335e813af8f46af8f58 data/western_wasteland/loot_tables/blocks/western_sand.json
+7fb81c7cf181101c35f7c52da7b7c1a2fb49dda5 data/western_wasteland/loot_tables/blocks/western_sandstone.json

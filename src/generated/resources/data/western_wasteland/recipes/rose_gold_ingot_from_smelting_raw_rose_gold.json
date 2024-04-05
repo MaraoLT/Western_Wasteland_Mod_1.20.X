@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "rose_gold",
+  "ingredient": {
+    "item": "western_wasteland:raw_rose_gold"
+  },
+  "result": "western_wasteland:rose_gold_ingot"
+}

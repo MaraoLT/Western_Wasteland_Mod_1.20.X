@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "western_wasteland:western_sandstone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_western_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "western_wasteland:western_sandstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_western_sandstone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "western_wasteland:western_sandstone"
+    ]
+  },
+  "sends_telemetry_event": false
+}

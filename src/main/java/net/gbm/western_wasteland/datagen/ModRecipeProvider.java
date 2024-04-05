@@ -31,11 +31,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(consumer, ROSE_GOLD_SMELTABLES, RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT.get(), 0.25f, 100, "rose_gold");
         oreBlasting(consumer, ROSE_GOLD_SMELTABLES, RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT.get(), 0.25f, 100, "rose_gold");
 
+
+        smeltingResultFromBase(consumer, Items.GLASS, ModBlocks.WESTERN_SAND.get());
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_GOLD_BLOCK.get())
                 .pattern("RRR")
                 .pattern("RRR")
                 .pattern("RRR")
-                .define('S', ModItems.ROSE_GOLD_INGOT.get())
+                .define('R', ModItems.ROSE_GOLD_INGOT.get())
                 .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT.get()), has(ModItems.ROSE_GOLD_INGOT.get()))
                 .save(consumer);
 
@@ -44,14 +47,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.ROSE_GOLD_BLOCK.get()), has(ModBlocks.ROSE_GOLD_BLOCK.get()))
                 .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEMPERED_GLASS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WESTERN_SANDSTONE.get())
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModBlocks.WESTERN_SAND.get())
+                .unlockedBy(getHasName(ModBlocks.WESTERN_SANDSTONE.get()), has(ModBlocks.WESTERN_SANDSTONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WESTERN_CUT_SANDSTONE.get(), 4)
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModBlocks.WESTERN_SANDSTONE.get())
+                .unlockedBy(getHasName(ModBlocks.WESTERN_CUT_SANDSTONE.get()), has(ModBlocks.WESTERN_CUT_SANDSTONE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEMPERED_GLASS.get(), 2)
                 .pattern(" G ")
                 .pattern("GRG")
                 .pattern(" G ")
                 .define('G', Items.GLASS)
                 .define('R', ModItems.ROSE_GOLD_INGOT.get())
-                .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT.get()), has(ModItems.ROSE_GOLD_INGOT.get()))
+                .unlockedBy(getHasName(ModBlocks.TEMPERED_GLASS.get()), has(ModBlocks.TEMPERED_GLASS.get()))
                 .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HORN_BLADE.get())
+                .pattern("  H")
+                .pattern(" H ")
+                .pattern("S  ")
+                .define('S', Items.STICK)
+                .define('H', ModItems.DEAD_HORN.get())
+                .unlockedBy(getHasName(ModItems.HORN_BLADE.get()), has(ModItems.HORN_BLADE.get()))
+                .save(consumer);
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
