@@ -1,6 +1,7 @@
-// 1.20.1	2024-03-31T12:52:54.8925522	Item Models: western_wasteland
+// 1.20.1	2024-04-05T00:27:45.9162562	Item Models: western_wasteland
 9225772d92fe185a4884fbd196aae068d8f469a2 assets/western_wasteland/models/item/bullet.json
 6b05a341b0c464af2defb2078ec0be03cfd4d1b7 assets/western_wasteland/models/item/cactus_flower.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/western_wasteland/models/item/dead_bull_spawn_egg.json
 696a106cae59b82f3e01fcdd5272f2f481ad41b6 assets/western_wasteland/models/item/dead_horn.json
 43ec40260f79682bfc0d7c51f7315e43ac7f1521 assets/western_wasteland/models/item/harmonica.json
 7a4e1f414e7bb0907e093ba7a29483a99ba8b9f6 assets/western_wasteland/models/item/horn_blade.json

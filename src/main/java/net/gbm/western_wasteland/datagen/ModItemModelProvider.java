@@ -25,6 +25,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.RAW_ROSE_GOLD);
         simpleItem(ModItems.ROSE_GOLD_INGOT);
+
+        withExistingParent(ModItems.DEAD_BULL_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

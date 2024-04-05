@@ -2,10 +2,13 @@ package net.gbm.western_wasteland;
 
 import com.mojang.logging.LogUtils;
 import net.gbm.western_wasteland.block.ModBlocks;
+import net.gbm.western_wasteland.entity.client.DeadBullRenderer;
+import net.gbm.western_wasteland.entity.ModEntities;
 import net.gbm.western_wasteland.item.ModCreativeModTabs;
 import net.gbm.western_wasteland.item.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,6 +35,7 @@ public class Western_Wasteland {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -62,6 +66,8 @@ public class Western_Wasteland {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.TEMPERED_GLASS.get(), RenderType.translucent()); // ver se precisa msm
+
+            EntityRenderers.register(ModEntities.DEAD_BULL.get(), DeadBullRenderer::new);
         }
     }
 }
