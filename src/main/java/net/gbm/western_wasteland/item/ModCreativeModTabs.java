@@ -27,6 +27,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BULLET.get());
                         output.accept(ModItems.CACTUS_FLOWER.get());
                         output.accept(ModItems.HARMONICA.get());
+                        output.accept(ModItems.DEAD_BULL_SPAWN_EGG.get());
                         // output.accept(Items.DIAMOND); // itens padrao tbm podem ser add e sem o .get()
                         output.accept(ModBlocks.ROSE_GOLD_BLOCK.get());
                         output.accept(ModBlocks.ROSE_GOLD_ORE.get());
