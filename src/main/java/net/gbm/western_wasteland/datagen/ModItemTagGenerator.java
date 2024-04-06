@@ -1,9 +1,11 @@
 package net.gbm.western_wasteland.datagen;
 
 import net.gbm.western_wasteland.Western_Wasteland;
+import net.gbm.western_wasteland.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -17,6 +19,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ROSE_GOLD_HELMET.get(),
+                        ModItems.ROSE_GOLD_CHESTPLATE.get(),
+                        ModItems.ROSE_GOLD_LEGGINGS.get(),
+                        ModItems.ROSE_GOLD_BOOTS.get());
     }
 }

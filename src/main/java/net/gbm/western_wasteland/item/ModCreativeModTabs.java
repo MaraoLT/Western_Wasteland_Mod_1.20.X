@@ -22,8 +22,10 @@ public class ModCreativeModTabs {
                         // add itens que vao aparecer na nova aba do criativo
                         output.accept(ModItems.DEAD_HORN.get());
                         output.accept(ModItems.HORN_BLADE.get());
+
                         output.accept(ModItems.RAW_ROSE_GOLD.get());
                         output.accept(ModItems.ROSE_GOLD_INGOT.get());
+
                         output.accept(ModItems.BULLET.get());
                         output.accept(ModItems.CACTUS_FLOWER.get());
                         output.accept(ModItems.HARMONICA.get());
@@ -31,11 +33,19 @@ public class ModCreativeModTabs {
                         // output.accept(Items.DIAMOND); // itens padrao tbm podem ser add e sem o .get()
                         output.accept(ModBlocks.ROSE_GOLD_BLOCK.get());
                         output.accept(ModBlocks.ROSE_GOLD_ORE.get());
+
                         output.accept(ModBlocks.TEMPERED_GLASS.get());
+
                         output.accept(ModBlocks.WESTERN_SANDSTONE.get());
                         output.accept(ModBlocks.WESTERN_CUT_SANDSTONE.get());
                         output.accept(ModBlocks.WESTERN_SAND.get());
+
                         output.accept(ModBlocks.WESTERN_CACTUS.get());
+
+                        output.accept(ModItems.ROSE_GOLD_HELMET.get());
+                        output.accept(ModItems.ROSE_GOLD_CHESTPLATE.get());
+                        output.accept(ModItems.ROSE_GOLD_LEGGINGS.get());
+                        output.accept(ModItems.ROSE_GOLD_BOOTS.get());
                     })
                     .build());
 
