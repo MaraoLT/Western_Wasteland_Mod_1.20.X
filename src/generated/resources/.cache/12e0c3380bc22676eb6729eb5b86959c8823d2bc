@@ -1,6 +1,14 @@
-// 1.20.1	2024-04-06T01:05:09.3073568	Item Models: western_wasteland
+// 1.20.1	2024-04-07T12:05:33.7627145	Item Models: western_wasteland
 9225772d92fe185a4884fbd196aae068d8f469a2 assets/western_wasteland/models/item/bullet.json
 6b05a341b0c464af2defb2078ec0be03cfd4d1b7 assets/western_wasteland/models/item/cactus_flower.json
+f2440132080d862a19393b5301500b4c89dc546a assets/western_wasteland/models/item/deadwood_button.json
+193a2ec19798f7836203f60615485a515020a36d assets/western_wasteland/models/item/deadwood_door.json
+6821ef01f8df3ef3eef9e62b3cad2917b92695bc assets/western_wasteland/models/item/deadwood_fence.json
+fbbf0749a6d81b5ae54ab2c0161cbf0e56db260a assets/western_wasteland/models/item/deadwood_fence_gate.json
+efe113572e6dbabfc2dbb9b0d66046a6de85621a assets/western_wasteland/models/item/deadwood_pressure_plate.json
+54b6ba6499f7f18f053f7f2921798f4b51469293 assets/western_wasteland/models/item/deadwood_slab.json
+9b0f63dec5cb2991c81345144f458ee6ea7a0db7 assets/western_wasteland/models/item/deadwood_stairs.json
+49e445f97f64a5829c505dab3cd81154a1f0c05f assets/western_wasteland/models/item/deadwood_trapdoor.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/western_wasteland/models/item/dead_bull_spawn_egg.json
 696a106cae59b82f3e01fcdd5272f2f481ad41b6 assets/western_wasteland/models/item/dead_horn.json
 43ec40260f79682bfc0d7c51f7315e43ac7f1521 assets/western_wasteland/models/item/harmonica.json

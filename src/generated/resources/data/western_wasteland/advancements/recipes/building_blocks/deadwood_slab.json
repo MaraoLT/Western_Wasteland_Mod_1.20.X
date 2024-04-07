@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deadwood_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "western_wasteland:deadwood_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "western_wasteland:deadwood_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_deadwood_slab",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "western_wasteland:deadwood_slab"
+    ]
+  },
+  "sends_telemetry_event": false
+}

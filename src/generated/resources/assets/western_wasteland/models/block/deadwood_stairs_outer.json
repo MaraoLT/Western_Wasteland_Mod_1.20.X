@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "western_wasteland:block/deadwood_planks",
+    "side": "western_wasteland:block/deadwood_planks",
+    "top": "western_wasteland:block/deadwood_planks"
+  }
+}

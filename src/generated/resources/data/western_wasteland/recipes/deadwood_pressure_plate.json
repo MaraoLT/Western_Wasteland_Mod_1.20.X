@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "western_wasteland:deadwood_planks"
+    }
+  },
+  "pattern": [
+    "  ",
+    "PP"
+  ],
+  "result": {
+    "item": "western_wasteland:deadwood_pressure_plate"
+  },
+  "show_notification": true
+}

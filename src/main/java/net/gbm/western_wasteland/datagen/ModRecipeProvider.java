@@ -85,6 +85,58 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.HORN_BLADE.get()), has(ModItems.HORN_BLADE.get()))
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEADWOOD_STAIRS.get(), 4)
+                .pattern("P  ")
+                .pattern("PP ")
+                .pattern("PPP")
+                .define('P', ModBlocks.DEADWOOD_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.DEADWOOD_STAIRS.get()), has(ModBlocks.DEADWOOD_STAIRS.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEADWOOD_SLAB.get(), 3)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("PPP")
+                .define('P', ModBlocks.DEADWOOD_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.DEADWOOD_SLAB.get()), has(ModBlocks.DEADWOOD_SLAB.get()))
+                .save(consumer);
+        ShapelessRecipeOne(consumer, RecipeCategory.REDSTONE, ModBlocks.DEADWOOD_PLANKS.get(), ModBlocks.DEADWOOD_BUTTON.get());
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEADWOOD_PRESSURE_PLATE.get())
+                .pattern("  ")
+                .pattern("PP")
+                .define('P', ModBlocks.DEADWOOD_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.DEADWOOD_PRESSURE_PLATE.get()), has(ModBlocks.DEADWOOD_PRESSURE_PLATE.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEADWOOD_FENCE.get(), 3)
+                .pattern("   ")
+                .pattern("PSP")
+                .pattern("PSP")
+                .define('P', ModBlocks.DEADWOOD_PLANKS.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.DEADWOOD_FENCE.get()), has(ModBlocks.DEADWOOD_FENCE.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEADWOOD_FENCE_GATE.get())
+                .pattern("   ")
+                .pattern("SPS")
+                .pattern("SPS")
+                .define('P', ModBlocks.DEADWOOD_PLANKS.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.DEADWOOD_FENCE_GATE.get()), has(ModBlocks.DEADWOOD_FENCE_GATE.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEADWOOD_DOOR.get(), 3)
+                .pattern("PP ")
+                .pattern("PP ")
+                .pattern("PP ")
+                .define('P', ModBlocks.DEADWOOD_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.DEADWOOD_DOOR.get()), has(ModBlocks.DEADWOOD_DOOR.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEADWOOD_TRAPDOOR.get(), 2)
+                .pattern("   ")
+                .pattern("PPP")
+                .pattern("PPP")
+                .define('P', ModBlocks.DEADWOOD_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.DEADWOOD_TRAPDOOR.get()), has(ModBlocks.DEADWOOD_TRAPDOOR.get()))
+                .save(consumer);
+
         ShapedRecipeFour(consumer, RecipeCategory.MISC, ModBlocks.DEADWOOD_LOG.get(), ModBlocks.DEADWOOD.get(), 3);
         ShapedRecipeFour(consumer, RecipeCategory.MISC, ModBlocks.STRIPPED_DEADWOOD_LOG.get(), ModBlocks.STRIPPED_DEADWOOD.get(), 3);
 

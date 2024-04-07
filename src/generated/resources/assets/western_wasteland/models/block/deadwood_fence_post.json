@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "western_wasteland:block/deadwood_planks"
+  }
+}

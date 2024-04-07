@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "western_wasteland:deadwood_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "   ",
+    "PSP",
+    "PSP"
+  ],
+  "result": {
+    "count": 3,
+    "item": "western_wasteland:deadwood_fence"
+  },
+  "show_notification": true
+}

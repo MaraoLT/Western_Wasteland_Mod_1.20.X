@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "western_wasteland:block/deadwood_planks"
+  }
+}

@@ -41,17 +41,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEADWOOD_PLANKS);
         leavesBlock(ModBlocks.DEADWOOD_LEAVES);
 
-        stairsBlock(((StairBlock) ModBlocks.DEADWOOD_PLANKS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
-        slabBlock(((SlabBlock) ModBlocks.DEADWOOD_PLANKS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
+        stairsBlock(((StairBlock) ModBlocks.DEADWOOD_STAIRS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.DEADWOOD_SLAB.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
 
-        buttonBlock(((ButtonBlock) ModBlocks.DEADWOOD_PLANKS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
-        pressurePlateBlock(((PressurePlateBlock) ModBlocks.DEADWOOD_PLANKS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.DEADWOOD_BUTTON.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.DEADWOOD_PRESSURE_PLATE.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
 
-        fenceBlock(((FenceBlock) ModBlocks.DEADWOOD_PLANKS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
-        fenceGateBlock(((FenceGateBlock) ModBlocks.DEADWOOD_PLANKS.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.DEADWOOD_FENCE.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.DEADWOOD_FENCE_GATE.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
 
-        doorBlockWithRenderType(((DoorBlock) ModBlocks.DEADWOOD_PLANKS.get()), modLoc("block/deadwood_door_bottom"), modLoc("block/deadwood_door_top"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DEADWOOD_PLANKS.get()), modLoc("block/deadwood_door_bottom"), true, "cutout");
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.DEADWOOD_DOOR.get()), modLoc("block/deadwood_door_bottom"), modLoc("block/deadwood_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DEADWOOD_TRAPDOOR.get()), modLoc("block/deadwood_door_bottom"), true, "cutout");
 
     }
 

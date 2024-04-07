@@ -1,4 +1,6 @@
-// 1.20.1	2024-04-06T21:15:24.5334736	Tags for minecraft:block mod id western_wasteland
+// 1.20.1	2024-04-07T12:05:33.7603504	Tags for minecraft:block mod id western_wasteland
+107db2d08a3e55330279f08f5465f0762b6b682e data/minecraft/tags/blocks/fences.json
+9c5fb84e9a6a74a2957794411bc3cf6398624710 data/minecraft/tags/blocks/fence_gates.json
 2529ea90e06806dac70d8d6abed2ac048cadaa84 data/minecraft/tags/blocks/logs_that_burn.json
 0c4c1fc5ea4f0924be13edbf5bf695f03bcc716e data/minecraft/tags/blocks/mineable/pickaxe.json
 0f26cea87f2de5196c688e8fdfd388edda7e3a72 data/minecraft/tags/blocks/mineable/shovel.json
