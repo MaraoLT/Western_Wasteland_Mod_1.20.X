@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "S": {
+    "F": {
       "item": "western_wasteland:western_sandstone"
     }
   },
   "pattern": [
-    "SS",
-    "SS"
+    "FF",
+    "FF"
   ],
   "result": {
     "count": 4,

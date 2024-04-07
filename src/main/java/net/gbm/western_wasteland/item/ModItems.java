@@ -41,6 +41,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> DEAD_BULL_SPAWN_EGG = ITEMS.register("dead_bull_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.DEAD_BULL, 0x3C3333, 0x100D0D, new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

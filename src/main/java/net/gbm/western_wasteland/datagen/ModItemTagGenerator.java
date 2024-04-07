@@ -1,6 +1,7 @@
 package net.gbm.western_wasteland.datagen;
 
 import net.gbm.western_wasteland.Western_Wasteland;
+import net.gbm.western_wasteland.block.ModBlocks;
 import net.gbm.western_wasteland.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -24,5 +25,20 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.ROSE_GOLD_CHESTPLATE.get(),
                         ModItems.ROSE_GOLD_LEGGINGS.get(),
                         ModItems.ROSE_GOLD_BOOTS.get());
+
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DEADWOOD.get().asItem())
+                .add(ModBlocks.DEADWOOD_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_DEADWOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_DEADWOOD_LOG.get().asItem());
+
+        this.tag(ItemTags.LOGS)
+                .add(ModBlocks.DEADWOOD.get().asItem())
+                .add(ModBlocks.DEADWOOD_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_DEADWOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_DEADWOOD_LOG.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.DEADWOOD_PLANKS.get().asItem());
     }
 }

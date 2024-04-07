@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rose_gold_ingot": {
+    "has_rose_gold_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "western_wasteland:rose_gold_ingot"
+              "western_wasteland:rose_gold_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rose_gold_ingot",
+      "has_rose_gold_block",
       "has_the_recipe"
     ]
   ],

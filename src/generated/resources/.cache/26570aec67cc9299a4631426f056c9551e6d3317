@@ -1,2 +1,5 @@
-// 1.20.1	2024-04-06T01:05:09.3034072	Tags for minecraft:item mod id western_wasteland
+// 1.20.1	2024-04-06T21:56:32.8941178	Tags for minecraft:item mod id western_wasteland
+2529ea90e06806dac70d8d6abed2ac048cadaa84 data/minecraft/tags/items/logs.json
+2529ea90e06806dac70d8d6abed2ac048cadaa84 data/minecraft/tags/items/logs_that_burn.json
+ce5c047537d59abc331be93cd9aa0c14fb497570 data/minecraft/tags/items/planks.json
 d6607b5b437bb304729a4ed86c6eacb51a1e4a5d data/minecraft/tags/items/trimmable_armor.json

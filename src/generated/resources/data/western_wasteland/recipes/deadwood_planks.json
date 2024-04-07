@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "western_wasteland:deadwood_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "western_wasteland:deadwood_planks"
+  }
+}

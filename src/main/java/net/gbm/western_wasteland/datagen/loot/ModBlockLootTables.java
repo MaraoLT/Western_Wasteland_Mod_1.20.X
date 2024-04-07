@@ -1,14 +1,10 @@
 package net.gbm.western_wasteland.datagen.loot;
 
 import net.gbm.western_wasteland.block.ModBlocks;
-import net.gbm.western_wasteland.datagen.ModItemModelProvider;
 import net.gbm.western_wasteland.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -29,6 +25,29 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.ROSE_GOLD_ORE.get(),
                 block -> createOreDrop(ModBlocks.ROSE_GOLD_ORE.get(), ModItems.RAW_ROSE_GOLD.get()));
+
+        this.dropSelf(ModBlocks.DEADWOOD.get());
+        this.dropSelf(ModBlocks.DEADWOOD_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_DEADWOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_DEADWOOD_LOG.get());
+
+        this.dropSelf(ModBlocks.DEADWOOD_PLANKS.get());
+
+        this.add(ModBlocks.DEADWOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.DEADWOOD_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // A FAZER: trocar para sapling
+
+
+        this.dropSelf(ModBlocks.DEADWOOD_STAIRS.get());
+        this.dropSelf(ModBlocks.DEADWOOD_BUTTON.get());
+        this.dropSelf(ModBlocks.DEADWOOD_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.DEADWOOD_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.DEADWOOD_FENCE.get());
+        this.dropSelf(ModBlocks.DEADWOOD_FENCE_GATE.get());
+
+        this.add(ModBlocks.DEADWOOD_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.DEADWOOD_SLAB.get()));
+        this.add(ModBlocks.DEADWOOD_DOOR.get(),
+                block -> createDoorTable(ModBlocks.DEADWOOD_DOOR.get()));
     }
 
 

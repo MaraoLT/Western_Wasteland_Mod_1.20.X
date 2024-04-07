@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "western_wasteland:block/deadwood_log_top",
+    "side": "western_wasteland:block/deadwood_log"
+  }
+}

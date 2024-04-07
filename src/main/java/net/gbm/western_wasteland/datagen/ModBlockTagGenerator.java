@@ -5,7 +5,7 @@ import net.gbm.western_wasteland.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraftforge.common.Tags;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -45,6 +45,21 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 //        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
 //                .add();
 
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DEADWOOD.get())
+                .add(ModBlocks.DEADWOOD_LOG.get())
+                .add(ModBlocks.STRIPPED_DEADWOOD.get())
+                .add(ModBlocks.STRIPPED_DEADWOOD_LOG.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.DEADWOOD_PLANKS.get());
+
+        // para conectarem
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.DEADWOOD_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.DEADWOOD_FENCE_GATE.get());
 
     }
 }

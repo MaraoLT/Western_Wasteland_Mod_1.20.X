@@ -6,6 +6,7 @@ import net.gbm.western_wasteland.entity.client.DeadBullRenderer;
 import net.gbm.western_wasteland.entity.ModEntities;
 import net.gbm.western_wasteland.item.ModCreativeModTabs;
 import net.gbm.western_wasteland.item.ModItems;
+import net.gbm.western_wasteland.potion.ModPotion;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -36,6 +37,8 @@ public class Western_Wasteland {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+
+        ModPotion.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

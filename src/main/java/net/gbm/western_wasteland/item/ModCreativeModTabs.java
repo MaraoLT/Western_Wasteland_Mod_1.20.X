@@ -6,7 +6,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -39,6 +38,22 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.WESTERN_SANDSTONE.get());
                         output.accept(ModBlocks.WESTERN_CUT_SANDSTONE.get());
                         output.accept(ModBlocks.WESTERN_SAND.get());
+
+                        output.accept(ModBlocks.DEADWOOD.get());
+                        output.accept(ModBlocks.DEADWOOD_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_DEADWOOD.get());
+                        output.accept(ModBlocks.STRIPPED_DEADWOOD_LOG.get());
+                        output.accept(ModBlocks.DEADWOOD_PLANKS.get());
+                        output.accept(ModBlocks.DEADWOOD_LEAVES.get());
+
+                        output.accept(ModBlocks.DEADWOOD_STAIRS.get());
+                        output.accept(ModBlocks.DEADWOOD_SLAB.get());
+                        output.accept(ModBlocks.DEADWOOD_BUTTON.get());
+                        output.accept(ModBlocks.DEADWOOD_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.DEADWOOD_FENCE.get());
+                        output.accept(ModBlocks.DEADWOOD_FENCE_GATE.get());
+                        output.accept(ModBlocks.DEADWOOD_DOOR.get());
+                        output.accept(ModBlocks.DEADWOOD_TRAPDOOR.get());
 
                         output.accept(ModBlocks.WESTERN_CACTUS.get());
 

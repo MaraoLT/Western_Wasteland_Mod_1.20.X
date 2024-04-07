@@ -1,6 +1,12 @@
-// 1.20.1	2024-03-31T12:52:54.8823982	Loot Tables
+// 1.20.1	2024-04-06T21:15:24.5334736	Loot Tables
+541e667d9ffbec6ab6ce3f37d126134a23c06e29 data/western_wasteland/loot_tables/blocks/deadwood.json
+f4e3c6a6e531de42b836f48b45f391818b194827 data/western_wasteland/loot_tables/blocks/deadwood_leaves.json
+0a782922a11d7c01d40c1f7a51d1c37c9bbeeb38 data/western_wasteland/loot_tables/blocks/deadwood_log.json
+f2a758c27b676c352ef7ee2d4647bf04b761c7c2 data/western_wasteland/loot_tables/blocks/deadwood_planks.json
 279f0a9930cfce10ef5d0b0820e24afc7506f7c8 data/western_wasteland/loot_tables/blocks/rose_gold_block.json
 b3b6775689f8f640e85ca41f2abaebf7f7349507 data/western_wasteland/loot_tables/blocks/rose_gold_ore.json
+cdd293b1021dda802fe7ae826841091c34042f16 data/western_wasteland/loot_tables/blocks/stripped_deadwood.json
+c0ccbd1a2cd405f24abfbdc0277baa51cb4c140b data/western_wasteland/loot_tables/blocks/stripped_deadwood_log.json
 2bd260664a95954a1d13372706167fc830f23fed data/western_wasteland/loot_tables/blocks/tempered_glass.json
 20f47c50037995e9dcbb0300591e8f4443182514 data/western_wasteland/loot_tables/blocks/western_cactus.json
 11d7848357d435e74fcb424508b0f9daa7a68f87 data/western_wasteland/loot_tables/blocks/western_cut_sandstone.json
