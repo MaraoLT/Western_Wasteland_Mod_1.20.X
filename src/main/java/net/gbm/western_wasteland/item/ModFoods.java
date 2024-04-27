@@ -3,6 +3,7 @@ package net.gbm.western_wasteland.item;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.HoneyBottleItem;
 import net.minecraftforge.event.entity.living.MobEffectEvent;
 
 public class ModFoods {

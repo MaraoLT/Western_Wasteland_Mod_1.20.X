@@ -36,35 +36,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         smeltingResultFromBase(consumer, Items.GLASS, ModBlocks.WESTERN_SAND.get());
 
-//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ROSE_GOLD_BLOCK.get())
-//                .pattern("RRR")
-//                .pattern("RRR")
-//                .pattern("RRR")
-//                .define('R', ModItems.ROSE_GOLD_INGOT.get())
-//                .unlockedBy(getHasName(ModItems.ROSE_GOLD_INGOT.get()), has(ModItems.ROSE_GOLD_INGOT.get()))
-//                .save(consumer);
         ShapedRecipeNine(consumer, RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT.get(), ModBlocks.ROSE_GOLD_BLOCK.get());
 
-//        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT.get(), 9)
-//                .requires(ModBlocks.ROSE_GOLD_BLOCK.get())
-//                .unlockedBy(getHasName(ModBlocks.ROSE_GOLD_BLOCK.get()), has(ModBlocks.ROSE_GOLD_BLOCK.get()))
-//                .save(consumer);
         ShapelessRecipeOne(consumer, RecipeCategory.MISC, ModBlocks.ROSE_GOLD_BLOCK.get(), ModItems.ROSE_GOLD_INGOT.get(), 9);
 
-//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WESTERN_SANDSTONE.get())
-//                .pattern("SS")
-//                .pattern("SS")
-//                .define('S', ModBlocks.WESTERN_SAND.get())
-//                .unlockedBy(getHasName(ModBlocks.WESTERN_SANDSTONE.get()), has(ModBlocks.WESTERN_SANDSTONE.get()))
-//                .save(consumer);
         ShapedRecipeFour(consumer, RecipeCategory.MISC, ModBlocks.WESTERN_SAND.get(), ModBlocks.WESTERN_SANDSTONE.get());
-
-//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WESTERN_CUT_SANDSTONE.get(), 4)
-//                .pattern("SS")
-//                .pattern("SS")
-//                .define('S', ModBlocks.WESTERN_SANDSTONE.get())
-//                .unlockedBy(getHasName(ModBlocks.WESTERN_CUT_SANDSTONE.get()), has(ModBlocks.WESTERN_CUT_SANDSTONE.get()))
-//                .save(consumer);
         ShapedRecipeFour(consumer, RecipeCategory.MISC, ModBlocks.WESTERN_SANDSTONE.get(), ModBlocks.WESTERN_CUT_SANDSTONE.get(), 4);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEMPERED_GLASS.get(), 2)
@@ -85,6 +61,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.HORN_BLADE.get()), has(ModItems.HORN_BLADE.get()))
                 .save(consumer);
 
+        //ARMOR RECIPES
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_HELMET.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("   ")
+                .define('R', ModItems.ROSE_GOLD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ROSE_GOLD_HELMET.get()), has(ModItems.ROSE_GOLD_HELMET.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_CHESTPLATE.get())
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', ModItems.ROSE_GOLD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ROSE_GOLD_CHESTPLATE.get()), has(ModItems.ROSE_GOLD_CHESTPLATE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_LEGGINGS.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .define('R', ModItems.ROSE_GOLD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ROSE_GOLD_LEGGINGS.get()), has(ModItems.ROSE_GOLD_LEGGINGS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLD_BOOTS.get())
+                .pattern("R R")
+                .pattern("R R")
+                .pattern("   ")
+                .define('R', ModItems.ROSE_GOLD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ROSE_GOLD_BOOTS.get()), has(ModItems.ROSE_GOLD_BOOTS.get()))
+                .save(consumer);
+
+        // DEADWOOD RECIPES
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEADWOOD_STAIRS.get(), 4)
                 .pattern("P  ")
                 .pattern("PP ")
@@ -144,44 +154,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeOne(consumer, RecipeCategory.MISC, ModBlocks.DEADWOOD_LOG.get(), ModBlocks.DEADWOOD_PLANKS.get(), 4);
 //        ShapelessRecipeOne(consumer, RecipeCategory.MISC, ModBlocks.STRIPPED_DEADWOOD.get(), ModBlocks.DEADWOOD_PLANKS.get(), 4);
 //        ShapelessRecipeOne(consumer, RecipeCategory.MISC, ModBlocks.STRIPPED_DEADWOOD_LOG.get(), ModBlocks.DEADWOOD_PLANKS.get(), 4);
-    }
 
 
-    protected static void ShapedRecipeFour(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult, int pQuantity) {
-        ShapedRecipeBuilder.shaped(pCategory, pResult, pQuantity)
-                .pattern("FF")
-                .pattern("FF")
-                .define('F', pIngredient)
-                .unlockedBy(getHasName(pResult), has(pResult))
-                .save(consumer);
-    }
-    protected static void ShapedRecipeFour(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult) {
-        ShapedRecipeBuilder.shaped(pCategory, pResult)
-                .pattern("FF")
-                .pattern("FF")
-                .define('F', pIngredient)
-                .unlockedBy(getHasName(pResult), has(pResult))
-                .save(consumer);
     }
 
-    protected static void ShapedRecipeNine(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult, int pQuantity) {
-        ShapedRecipeBuilder.shaped(pCategory, pResult, pQuantity)
-                .pattern("NNN")
-                .pattern("NNN")
-                .pattern("NNN")
-                .define('N', pIngredient)
-                .unlockedBy(getHasName(pResult), has(pResult))
-                .save(consumer);
-    }
-    protected static void ShapedRecipeNine(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult) {
-        ShapedRecipeBuilder.shaped(pCategory, pResult)
-                .pattern("NNN")
-                .pattern("NNN")
-                .pattern("NNN")
-                .define('N', pIngredient)
-                .unlockedBy(getHasName(pResult), has(pResult))
-                .save(consumer);
-    }
 
     protected static void ShapelessRecipeOne(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult, int pQuantity) {
         ShapelessRecipeBuilder.shapeless(pCategory, pResult, pQuantity)
@@ -192,6 +168,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void ShapelessRecipeOne(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult) {
         ShapelessRecipeBuilder.shapeless(pCategory, pResult)
                 .requires(pIngredient)
+                .unlockedBy(getHasName(pResult), has(pResult))
+                .save(consumer);
+    }
+    protected static void ShapedRecipeFour(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult, int pQuantity) {
+        ShapedRecipeBuilder.shaped(pCategory, pResult, pQuantity)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', pIngredient)
+                .unlockedBy(getHasName(pResult), has(pResult))
+                .save(consumer);
+    }
+
+    protected static void ShapedRecipeFour(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult) {
+        ShapedRecipeBuilder.shaped(pCategory, pResult)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', pIngredient)
+                .unlockedBy(getHasName(pResult), has(pResult))
+                .save(consumer);
+    }
+    protected static void ShapedRecipeNine(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult, int pQuantity) {
+        ShapedRecipeBuilder.shaped(pCategory, pResult, pQuantity)
+                .pattern("NNN")
+                .pattern("NNN")
+                .pattern("NNN")
+                .define('N', pIngredient)
+                .unlockedBy(getHasName(pResult), has(pResult))
+                .save(consumer);
+    }
+
+    protected static void ShapedRecipeNine(Consumer<FinishedRecipe> consumer, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult) {
+        ShapedRecipeBuilder.shaped(pCategory, pResult)
+                .pattern("NNN")
+                .pattern("NNN")
+                .pattern("NNN")
+                .define('N', pIngredient)
                 .unlockedBy(getHasName(pResult), has(pResult))
                 .save(consumer);
     }

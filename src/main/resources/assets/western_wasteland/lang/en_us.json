@@ -31,11 +31,12 @@
   "block.western_wasteland.deadwood_planks": "Deadwood Planks",
   "block.western_wasteland.deadwood_leaves": "Deadwood Leaves",
 
-  "block.western_wasteland.deadwood_stair": "Deadwood Stairs",
+  "block.western_wasteland.deadwood_stairs": "Deadwood Stairs",
   "block.western_wasteland.deadwood_slab": "Deadwood Slab",
   "block.western_wasteland.deadwood_button": "Deadwood Button",
   "block.western_wasteland.deadwood_pressure_plate": "Deadwood Pressure Plate",
   "block.western_wasteland.deadwood_fence": "Deadwood Fence",
+  "block.western_wasteland.deadwood_fence_gate": "Deadwood Fence Gate",
   "block.western_wasteland.deadwood_door": "Deadwood Door",
   "block.western_wasteland.deadwood_trapdoor": "Deadwood Trapdoor",
 
