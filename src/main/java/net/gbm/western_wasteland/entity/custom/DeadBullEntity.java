@@ -41,7 +41,7 @@ public class DeadBullEntity extends Animal implements GeoEntity {
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
-        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 0.8D, false));
+        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 0.9D, false));
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 0.8D));
         this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
 
@@ -56,41 +56,10 @@ public class DeadBullEntity extends Animal implements GeoEntity {
     }
 
     @Override
-//    public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-//        //controllerRegistrar.add(new AnimationController<>(this, "controller", 0, this::predicate));
-//        //controllerRegistrar.add(new AnimationController<>(this, "attackController", 0, this::attackPredicate));
-//        //controllerRegistrar.add(DefaultAnimations.genericAttackAnimation(this, RawAnimation.begin().thenPlay("animation.dead_bull.attack")));
-//        controllerRegistrar.add(DefaultAnimations.genericWalkIdleController(this));
-//        controllerRegistrar.add(DefaultAnimations.genericAttackAnimation(this, RawAnimation.begin().thenPlay("animation.dead_bull.attack")));
-//    }
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController[]{DefaultAnimations.genericWalkIdleController(this)});
-        controllers.add(new AnimationController[]{DefaultAnimations.genericAttackAnimation(this, DefaultAnimations.ATTACK_STRIKE)});
+        controllers.add(DefaultAnimations.genericWalkIdleController(this));
+        controllers.add(DefaultAnimations.genericAttackAnimation(this, DefaultAnimations.ATTACK_STRIKE));
     }
-
-//    private PlayState attackPredicate(AnimationState<DeadBullEntity> deadBullEntityAnimationState) {
-//        if (this.swinging) {
-//            deadBullEntityAnimationState.getController().setAnimation(RawAnimation.begin()
-//                    .then("animation.dead_bull.attack", Animation.LoopType.DEFAULT));
-//            return PlayState.CONTINUE;
-//        } else {
-//            deadBullEntityAnimationState.getController().forceAnimationReset();
-//            return PlayState.STOP;
-//        }
-//    }
-
-//    private PlayState predicate(AnimationState<DeadBullEntity> deadBullEntityAnimationState) {
-//        if(deadBullEntityAnimationState.isMoving()) {
-//            deadBullEntityAnimationState.getController().setAnimation(RawAnimation.begin().
-//                    then("animation.dead_bull.walk", Animation.LoopType.LOOP));
-//            return PlayState.CONTINUE;
-//        }
-//
-//        deadBullEntityAnimationState.getController().setAnimation(RawAnimation.begin()
-//                .then("animation.dead_bull.idle", Animation.LoopType.LOOP));
-//        return PlayState.CONTINUE;
-//    }
-
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
