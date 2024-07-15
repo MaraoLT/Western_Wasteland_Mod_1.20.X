@@ -2,6 +2,6 @@
   "parent": "minecraft:block/template_orientable_trapdoor_top",
   "render_type": "minecraft:cutout",
   "textures": {
-    "texture": "western_wasteland:block/deadwood_door_bottom"
+    "texture": "western_wasteland:block/deadwood_trapdoor"
   }
 }

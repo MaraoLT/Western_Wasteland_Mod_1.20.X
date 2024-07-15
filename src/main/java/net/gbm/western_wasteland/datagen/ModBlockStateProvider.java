@@ -51,7 +51,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock(((FenceGateBlock) ModBlocks.DEADWOOD_FENCE_GATE.get()), blockTexture(ModBlocks.DEADWOOD_PLANKS.get()));
 
         doorBlockWithRenderType(((DoorBlock) ModBlocks.DEADWOOD_DOOR.get()), modLoc("block/deadwood_door_bottom"), modLoc("block/deadwood_door_top"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DEADWOOD_TRAPDOOR.get()), modLoc("block/deadwood_door_bottom"), true, "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DEADWOOD_TRAPDOOR.get()), modLoc("block/deadwood_trapdoor"), true, "cutout");
 
     }
 

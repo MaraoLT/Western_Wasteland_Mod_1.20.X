@@ -3,8 +3,9 @@ package net.gbm.western_wasteland.item;
 import net.gbm.western_wasteland.Western_Wasteland;
 import net.gbm.western_wasteland.entity.ModEntities;
 import net.gbm.western_wasteland.item.custom.HarmonicaItem;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.tags.InstrumentTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,7 +29,7 @@ public class ModItems {
     public static final RegistryObject<Item> CACTUS_FLOWER = ITEMS.register("cactus_flower",
             () -> new Item(new Item.Properties().food(ModFoods.CACTUS_FLOWER)));
     public static final RegistryObject<Item> HARMONICA = ITEMS.register("harmonica",
-            () -> new HarmonicaItem(new Item.Properties()));
+            () -> new HarmonicaItem((new Item.Properties()).stacksTo(1), InstrumentTags.GOAT_HORNS));
 
     public static final RegistryObject<Item> ROSE_GOLD_HELMET = ITEMS.register("rose_gold_helmet",
             () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.HELMET, new Item.Properties()));
